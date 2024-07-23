@@ -1,0 +1,13 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+completion-timeout = 50
+idle-timeout = 50
+true-color = true
+
+[editor.statusline]
+right = ["version-control", "diagnostics", "selections", "register", "position", "file-encoding"]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
