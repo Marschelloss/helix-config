@@ -11,3 +11,6 @@ right = ["version-control", "diagnostics", "selections", "register", "position",
 mode.normal = "N"
 mode.insert = "I"
 mode.select = "S"
+
+[editor.soft-wrap]
+enable = true
