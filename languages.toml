@@ -1,13 +1,33 @@
 [[language]]
 name = "markdown"
-language-servers = [ "marksman", "markdown-oxide", "vscode-html-language-server" ]
+language-servers = ["marksman", "markdown-oxide", "vscode-html-language-server"]
 
 [[language]]
 name = "yaml"
 auto-format = true
-formatter = { command = 'prettier', args = ["--parser", "yaml", "--quote-props", "consistent"] }
+formatter = { command = 'prettier', args = [
+  "--parser",
+  "yaml",
+  "--quote-props",
+  "consistent",
+] }
+
+# [language-server.lemminx]
+# command = "lemminx"
 
 [[language]]
 name = "xml"
 auto-format = true
-formatter = { command = 'prettier', args = ["--plugin", "@prettier/plugin-xml", "--tab-width", "2", "--xml-whitespace-sensitivity", "ignore"] }
+formatter = { command = 'prettier', args = [
+  "--plugin",
+  "@prettier/plugin-xml",
+  "--tab-width",
+  "2",
+  "--xml-whitespace-sensitivity",
+  "ignore",
+] }
+# language-servers = [ "lemminx" ]
+
+[[language]]
+name = "bash"
+indent = { tab-width = 2, unit = "  " }
